@@ -1,0 +1,12 @@
+@import url('https://teliads-assets.netlify.app/fonts/index.css');
+@import '@teliads/components/foundations/spacing/variables';
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.text .teliaRadioButton {
+  margin-top: $telia-spacing-20;
+}
+
