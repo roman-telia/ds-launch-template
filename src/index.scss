@@ -1,6 +1,10 @@
 @import url('https://teliads-assets.netlify.app/fonts/index.css');
 @import '@teliads/components/foundations/spacing/variables';
 
+* {
+  box-sizing: border-box;
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -10,3 +14,7 @@ body, html {
   margin-top: $telia-spacing-20;
 }
 
+.telia-fieldset {
+  display: flex;
+  flex-direction: column;
+}
