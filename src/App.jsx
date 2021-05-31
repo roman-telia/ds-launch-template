@@ -30,8 +30,8 @@ const App = () => {
               <TeliaRow>
                 <TeliaCol width={6}>
                   <TeliaTextSpacing>
-                    <TeliaIcon name="delivery" />
                     <TeliaHeading tag="h3" variant="title-200">
+                      <TeliaIcon name="delivery" />
                       Add delivery address
                     </TeliaHeading>
                     <TeliaP variant="paragraph-100">
@@ -46,8 +46,8 @@ const App = () => {
               <TeliaRow>
                 <TeliaCol width={6}>
                   <TeliaTextSpacing>
-                    <TeliaIcon name="credit-card" />
-                    <TeliaHeading tag="h3" variant="title-200">
+                    <TeliaHeading tag="h3" variant="title-100">
+                      <TeliaIcon name="credit-card" />
                       Add credit card info
                     </TeliaHeading>
                     <TeliaP variant="paragraph-100">
@@ -62,8 +62,8 @@ const App = () => {
               <TeliaRow>
                 <TeliaCol width={12}>
                   <TeliaTextSpacing>
-                    <TeliaIcon name="settings" />
                     <TeliaHeading tag="h3" variant="title-200">
+                      <TeliaIcon name="settings" />
                       Edit account settings
                     </TeliaHeading>
                     <TeliaP variant="paragraph-100">

@@ -1,15 +1,16 @@
 import React from "react";
 import './Header.scss';
-import {TeliaIcon, TeliaP} from '@teliads/components/react';
+import {TeliaP} from '@teliads/components/react';
+import Logo from '../Logo/Logo';
 
 const Header = () => {
   return (
     <header className="telia-navbar">
       <div className="col-2">
-        <TeliaIcon name="telia" color="white" /> Telia
+        <Logo />
       </div>
       <div className="col-8"></div>
-      <div className="col-2">
+      <div className="col-2 col-2--right">
         <TeliaP variant="subsection">Telia Design System</TeliaP>
       </div>
     </header>

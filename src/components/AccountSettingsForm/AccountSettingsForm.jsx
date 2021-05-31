@@ -24,7 +24,7 @@ const AccountSettingsForm = () => {
       <TeliaCol width={3}>
         <TeliaTextSpacing>
           <TeliaP variant="paragraph-200">minna@email.com</TeliaP>
-          <TeliaLink>Change password</TeliaLink>
+          <TeliaP variant="paragraph-200"><TeliaLink href="https://www.telia.fi" target="__blank">Change password</TeliaLink></TeliaP>
         </TeliaTextSpacing>
         <TeliaSelect name="language">
             {["Swedish", "Norvegian", "Lithuanian", "Latvia", "Danish", "Finnish", "Estonian", "English"].map((language) => {

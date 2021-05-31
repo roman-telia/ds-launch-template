@@ -1,5 +1,7 @@
 @import "@teliads/components/foundations/colors/variables";
+@import "@teliads/components/foundations/spacing/variables";
 
 .mainSection {
+  padding: $telia-spacing-64 0 $telia-spacing-96 0;
   background-color: #e5e5e5;
 }
