@@ -13,6 +13,9 @@
     .innerWrapper {
       display: flex;
       flex-direction: row;
+      .telia-p--paragraph-100 {
+        margin-left: $telia-spacing-8;
+      }
     }
   }
 }

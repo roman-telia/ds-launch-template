@@ -18,8 +18,8 @@ const OrderHistoryItem = () => {
           <div className="innerWrapper">
             <TeliaColorDot color="#26BB6F" />
             <TeliaP variant="paragraph-100">Delivered</TeliaP>
-            <TeliaP variant="paragraph-100">25.05.2021</TeliaP>
           </div>
+          <TeliaP variant="paragraph-100">25.05.2021</TeliaP>
         </div>
       </TeliaTextSpacing>
     </div>
