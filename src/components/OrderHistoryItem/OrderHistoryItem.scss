@@ -1,0 +1,18 @@
+@import "@teliads/components/foundations/spacing/variables";
+@import "@teliads/components/foundations/colors/variables";
+
+.orderHistoryItem {
+  padding: $telia-spacing-20;
+  background-color: $telia-white;
+  border-radius: 8px;
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .innerWrapper {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
