@@ -1,10 +1,17 @@
 @import "@teliads/components/foundations/spacing/variables";
 @import "@teliads/components/foundations/colors/variables";
+@import "@teliads/components/foundations/shadows/mixins";
 
 .orderHistoryItem {
+  border: #9c9c9c 1px solid;
   padding: $telia-spacing-20;
   background-color: $telia-white;
   border-radius: 8px;
+  margin-top: $telia-spacing-32;
+
+  &:hover {
+    @include telia-shadow('soft');
+  }
   .wrapper {
     display: flex;
     flex-direction: row;

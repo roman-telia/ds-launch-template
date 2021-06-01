@@ -4,4 +4,7 @@
 .mainSection {
   padding: $telia-spacing-64 0 $telia-spacing-96 0;
   background-color: #e5e5e5;
+  .tabBody {
+    padding: $telia-spacing-48 0 $telia-spacing-64;
+  }
 }

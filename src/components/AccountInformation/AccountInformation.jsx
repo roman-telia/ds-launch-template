@@ -7,12 +7,13 @@ import {
   TeliaHeading,
   TeliaP,
 } from "@teliads/components/react";
+import './AccountInformation.scss';
 
 const AccountInformation = () => {
   return (
     <TeliaGrid>
       <TeliaRow>
-        <TeliaCol width={7}>
+        <TeliaCol width={7} className="text-col">
           <TeliaTextSpacing>
             <TeliaHeading variant="title-600" tag="h1">
               My account

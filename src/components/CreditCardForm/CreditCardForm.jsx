@@ -6,12 +6,13 @@ import {
   TeliaCheckbox,
   TeliaButton,
 } from "@teliads/components/react";
+import './CreditCardForm.scss';
 
 const CreditCardForm = () => {
   return (
     <form>
       <TeliaRow>
-        <TeliaCol width={12}>
+        <TeliaCol width={12} className="input-col">
           <TeliaTextInput
             required={true}
             name="name"
@@ -19,7 +20,7 @@ const CreditCardForm = () => {
             type="text"
           />
         </TeliaCol>
-        <TeliaCol width={12}>
+        <TeliaCol width={12} className="input-col">
           <TeliaTextInput
             name="cardnumber"
             variant="text"
@@ -27,7 +28,7 @@ const CreditCardForm = () => {
             label="Card number"
           />
         </TeliaCol>
-        <TeliaCol width={6}>
+        <TeliaCol width={6} className="input-col">
           <TeliaTextInput
             name="expiration"
             variant="text"
@@ -35,7 +36,7 @@ const CreditCardForm = () => {
             label="Expiration date (mm/yyyy)"
           />
         </TeliaCol>
-        <TeliaCol width={6}>
+        <TeliaCol width={6} className="input-col">
           <TeliaTextInput
             name="cvv"
             variant="text"
@@ -45,10 +46,10 @@ const CreditCardForm = () => {
         </TeliaCol>
       </TeliaRow>
       <TeliaRow>
-        <TeliaCol width={12}>
+        <TeliaCol width={12} className="input-col">
           <TeliaCheckbox name="remember">Remember card detaild</TeliaCheckbox>
         </TeliaCol>
-        <TeliaCol width={12}>
+        <TeliaCol width={12} className="button-col">
           <TeliaButton type="submit" variant="primary">
             Save changes
           </TeliaButton>

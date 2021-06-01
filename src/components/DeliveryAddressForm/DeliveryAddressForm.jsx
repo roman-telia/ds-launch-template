@@ -8,12 +8,13 @@ import {
   TeliaFieldset,
   TeliaRadioButton,
 } from "@teliads/components/react";
+import './DeliveryAddressForm.scss';
 
 const DeliveryAddressForm = () => {
   return (
     <form>
       <TeliaRow>
-        <TeliaCol width={12}>
+        <TeliaCol width={12} className="input-col">
           <TeliaSelect
             selectId="countrySelect"
             label="Country"
@@ -32,13 +33,13 @@ const DeliveryAddressForm = () => {
             ].map((option) => {
               return (
                 <option key={option} vlaue={option}>
-                  {!option ? "Select country" : option}
+                  {!option ? "Choose..." : option}
                 </option>
               );
             })}
           </TeliaSelect>
         </TeliaCol>
-        <TeliaCol width={12}>
+        <TeliaCol width={12} className="input-col">
           <TeliaTextInput
             name="street"
             variant="text"
@@ -46,7 +47,7 @@ const DeliveryAddressForm = () => {
             label="Street adress"
           />
         </TeliaCol>
-        <TeliaCol width={12}>
+        <TeliaCol width={12} className="input-col">
           <TeliaTextInput
             name="city"
             variant="text"
@@ -54,7 +55,7 @@ const DeliveryAddressForm = () => {
             label="City"
           />
         </TeliaCol>
-        <TeliaCol width={6}>
+        <TeliaCol width={6} className="input-col">
           <TeliaTextInput
             name="zip"
             variant="number"
@@ -63,7 +64,7 @@ const DeliveryAddressForm = () => {
             label="Zipcode"
           />
         </TeliaCol>
-        <TeliaCol width={6}>
+        <TeliaCol width={6} className="input-col">
           <TeliaTextInput
             name="state"
             variant="text"
@@ -73,7 +74,7 @@ const DeliveryAddressForm = () => {
         </TeliaCol>
       </TeliaRow>
       <TeliaRow>
-        <TeliaCol width={12}>
+        <TeliaCol width={12} className="input-col">
           <TeliaFieldset className="text">
             <legend>Billing address</legend>
             <TeliaRadioButton
@@ -93,7 +94,7 @@ const DeliveryAddressForm = () => {
             </TeliaRadioButton>
           </TeliaFieldset>
         </TeliaCol>
-        <TeliaCol width={12}>
+        <TeliaCol width={12} className="button-col">
           <TeliaButton type="submit" variant="primary">
             Save changes
           </TeliaButton>

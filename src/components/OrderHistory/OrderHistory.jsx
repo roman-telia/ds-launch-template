@@ -13,7 +13,7 @@ const OrderHistory = () => {
   return (
     <TeliaGrid>
       <TeliaRow>
-        <TeliaCol width={12}>
+        <TeliaCol width={12} className="margin-col">
           <TeliaHeading variant="title-400" tag="h3">
             Order history
           </TeliaHeading>

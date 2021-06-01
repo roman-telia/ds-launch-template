@@ -26,54 +26,56 @@ const App = () => {
         <section className="mainSection">
           <AccountInformation />
           <TeliaTab background={true}>
-            <TeliaTabContent active name="Delivery information">
-              <TeliaRow>
-                <TeliaCol width={6}>
-                  <TeliaTextSpacing>
-                    <TeliaHeading tag="h3" variant="title-200">
-                      <TeliaIcon name="delivery" />
-                      Add delivery address
-                    </TeliaHeading>
-                    <TeliaP variant="paragraph-100">
-                      Edit your delivery information here.
-                    </TeliaP>
-                  </TeliaTextSpacing>
-                  <DeliveryAddressForm />
-                </TeliaCol>
-              </TeliaRow>
-            </TeliaTabContent>
-            <TeliaTabContent name="Payment information">
-              <TeliaRow>
-                <TeliaCol width={6}>
-                  <TeliaTextSpacing>
-                    <TeliaHeading tag="h3" variant="title-100">
-                      <TeliaIcon name="credit-card" />
-                      Add credit card info
-                    </TeliaHeading>
-                    <TeliaP variant="paragraph-100">
-                      Edit your payment information here.
-                    </TeliaP>
-                  </TeliaTextSpacing>
-                  <CreditCardForm />
-                </TeliaCol>
-              </TeliaRow>
-            </TeliaTabContent>
-            <TeliaTabContent name="Account settings">
-              <TeliaRow>
-                <TeliaCol width={12}>
-                  <TeliaTextSpacing>
-                    <TeliaHeading tag="h3" variant="title-200">
-                      <TeliaIcon name="settings" />
-                      Edit account settings
-                    </TeliaHeading>
-                    <TeliaP variant="paragraph-100">
-                      Edit your account details and notifications preferences.
-                    </TeliaP>
-                  </TeliaTextSpacing>
-                  <AccountSettingsForm />
-                </TeliaCol>
-              </TeliaRow>
-            </TeliaTabContent>
+            <div className="tabBody">
+              <TeliaTabContent active name="Delivery information">
+                <TeliaRow>
+                  <TeliaCol width={6}>
+                    <TeliaTextSpacing>
+                      <TeliaHeading tag="h3" variant="title-200">
+                        <TeliaIcon name="delivery" />
+                        Add delivery address
+                      </TeliaHeading>
+                      <TeliaP variant="paragraph-100">
+                        Edit your delivery information here.
+                      </TeliaP>
+                    </TeliaTextSpacing>
+                    <DeliveryAddressForm />
+                  </TeliaCol>
+                </TeliaRow>
+              </TeliaTabContent>
+              <TeliaTabContent name="Payment information">
+                <TeliaRow>
+                  <TeliaCol width={6}>
+                    <TeliaTextSpacing>
+                      <TeliaHeading tag="h3" variant="title-100">
+                        <TeliaIcon name="credit-card" />
+                        Add credit card info
+                      </TeliaHeading>
+                      <TeliaP variant="paragraph-100">
+                        Edit your payment information here.
+                      </TeliaP>
+                    </TeliaTextSpacing>
+                    <CreditCardForm />
+                  </TeliaCol>
+                </TeliaRow>
+              </TeliaTabContent>
+              <TeliaTabContent name="Account settings">
+                <TeliaRow>
+                  <TeliaCol width={12}>
+                    <TeliaTextSpacing>
+                      <TeliaHeading tag="h3" variant="title-200">
+                        <TeliaIcon name="settings" />
+                        Edit account settings
+                      </TeliaHeading>
+                      <TeliaP variant="paragraph-100">
+                        Edit your account details and notifications preferences.
+                      </TeliaP>
+                    </TeliaTextSpacing>
+                    <AccountSettingsForm />
+                  </TeliaCol>
+                </TeliaRow>
+              </TeliaTabContent>
+            </div>
           </TeliaTab>
           <OrderHistory />
         </section>

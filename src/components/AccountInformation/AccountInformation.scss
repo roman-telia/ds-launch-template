@@ -1,0 +1,11 @@
+@import "@teliads/components/foundations/spacing/variables";
+
+.text-col {
+    margin-bottom: $telia-spacing-48;
+    .telia-heading--title-600 {
+        margin-bottom: $telia-spacing-16;
+    }
+    .telia-heading--title-400 {
+        margin: $telia-spacing-64 0 $telia-spacing-12 0;
+    }
+}

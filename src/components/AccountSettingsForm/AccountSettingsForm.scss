@@ -1,0 +1,17 @@
+@import "@teliads/components/foundations/spacing/variables";
+
+.settings-col {
+  .telia-p--subsection {
+    margin-top: 46px;
+    &:nth-child(3) {
+      margin-top: 72px;
+    }
+  }
+  .telia-p--paragraph-200, telia-select {
+    margin-top: 40px;
+  }
+  .telia-toggle {
+    margin-top: 50px;
+  }
+}
+
